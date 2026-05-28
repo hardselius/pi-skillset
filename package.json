@@ -1,20 +1,19 @@
 {
-  "name": "pi-superpowers",
+  "name": "pi-skillset",
   "version": "0.2.0",
-  "description": "Superpowers workflow skills adapted for pi",
+  "description": "Personal toolbelt of structured workflow skills for pi",
   "keywords": [
     "pi-package"
   ],
   "license": "MIT",
-  "author": "coctostan",
+  "author": "hardselius",
   "repository": {
     "type": "git",
-    "url": "https://github.com/coctostan/pi-superpowers.git"
+    "url": "https://github.com/hardselius/pi-skillset.git"
   },
   "files": [
     "extensions/",
     "skills/",
-    "banner.jpg",
     "LICENSE",
     "README.md"
   ],

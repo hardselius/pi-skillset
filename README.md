@@ -1,34 +1,20 @@
-# pi-superpowers
+# pi-skillset
 
-![pi-superpowers banner](banner.jpg)
-
-Structured workflow skills for [pi](https://github.com/badlogic/pi-mono), adapted from [Superpowers](https://github.com/obra/superpowers) by Jesse Vincent.
-
-Brainstorming → Planning → TDD → Debugging → Code Review → Finishing — as composable skills your coding agent loads on demand.
+A personal toolbelt of structured workflow skills for [pi](https://github.com/badlogic/pi-mono). Brainstorming, planning, TDD, debugging, code review, and finishing — as composable skills your coding agent loads on demand.
 
 ## Install
 
 ```bash
-pi install git:github.com/coctostan/pi-superpowers
+pi install git:github.com/hardselius/pi-skillset
 ```
 
 Or add to `.pi/settings.json` (project-level) or `~/.pi/agent/settings.json` (global):
 
 ```json
 {
-  "packages": ["git:github.com/coctostan/pi-superpowers"]
+  "packages": ["git:github.com/hardselius/pi-skillset"]
 }
 ```
-
-## Optional: Subagent Tool
-
-Several skills can dispatch work to subagents (marked with 🤖 below). **pi-superpowers does not include a subagent tool.** These skills still work as process guides without one — you just run tasks manually instead of dispatching them.
-
-To enable automated dispatch, install a subagent extension:
-
-- **pi's example subagent extension** — Ships with pi at `examples/extensions/subagent/`. See [its README](https://github.com/badlogic/pi-mono/tree/main/packages/coding-agent/examples/extensions/subagent) for installation via symlinks into `~/.pi/agent/extensions/subagent/`.
-- **Any compatible subagent extension** — Any extension that provides a `subagent` tool works.
-- **Manual alternative** — Run `pi -p "prompt"` in another terminal, or use tmux panes for parallel tasks.
 
 ## What's Inside
 
@@ -39,16 +25,18 @@ To enable automated dispatch, install a subagent extension:
 | **brainstorming** | Socratic design refinement — questions, alternatives, incremental validation | `/skill:brainstorming` |
 | **writing-plans** | Detailed implementation plans with bite-sized TDD tasks | `/skill:writing-plans` |
 | **executing-plans** | Batch execution with checkpoints for architect review | `/skill:executing-plans` |
-| 🤖 **subagent-driven-development** | Fresh subagent per task with two-stage review | `/skill:subagent-driven-development` |
+| **subagent-driven-development** | Fresh subagent per task with two-stage review | `/skill:subagent-driven-development` |
 | **test-driven-development** | RED-GREEN-REFACTOR cycle (includes anti-patterns reference) | `/skill:test-driven-development` |
 | **systematic-debugging** | 4-phase root cause investigation | `/skill:systematic-debugging` |
 | **verification-before-completion** | Evidence before claims, always | `/skill:verification-before-completion` |
-| 🤖 **requesting-code-review** | Pre-merge review with severity categories | `/skill:requesting-code-review` |
+| **requesting-code-review** | Pre-merge review with severity categories | `/skill:requesting-code-review` |
 | **receiving-code-review** | Technical evaluation of review feedback | `/skill:receiving-code-review` |
-| 🤖 **dispatching-parallel-agents** | Concurrent subagent workflows | `/skill:dispatching-parallel-agents` |
+| **dispatching-parallel-agents** | Concurrent subagent workflows | `/skill:dispatching-parallel-agents` |
 | **using-git-worktrees** | Isolated development branches | `/skill:using-git-worktrees` |
 | **finishing-a-development-branch** | Merge/PR decision workflow | `/skill:finishing-a-development-branch` |
-| 🤖 **writing-skills** | TDD applied to process documentation — create, test, and bulletproof skills | `/skill:writing-skills` |
+| **writing-skills** | TDD applied to process documentation — create, test, and bulletproof skills | `/skill:writing-skills` |
+
+Several skills can dispatch work to subagents. pi supports this out of the box — run `pi -p "prompt"` to spin up a subagent in another terminal or tmux pane. No extra extensions needed.
 
 ### Plan Tracker
 
@@ -115,7 +103,7 @@ npm run test:watch
 
 ## Attribution
 
-Skill content adapted from [Superpowers](https://github.com/obra/superpowers) by Jesse Vincent, licensed under MIT.
+Skill content adapted from [Superpowers](https://github.com/obra/superpowers) by Jesse Vincent, licensed under MIT. The pi adaptation was originally done by [coctostan/pi-superpowers](https://github.com/coctostan/pi-superpowers).
 
 ## License
 

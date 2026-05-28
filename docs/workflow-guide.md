@@ -1,6 +1,6 @@
 # Workflow Guide
 
-How the pi-superpowers skills work together — and what it looks like when
+How the pi-skillset skills work together — and what it looks like when
 they're working.
 
 ## The Mental Model
